@@ -5,14 +5,14 @@ services:
     image: redis
     hostname: redis
     networks:
-      - redis-net
+      - redis-network
     ports:
       - 6379:6379
   server:
     build: ./server
     tty: true
     networks:
-      - redis-net
+      - redis-network
     depends_on:
       - "redis"
     volumes:
@@ -20,4 +20,4 @@ services:
     ports:
       - 3000:3000
 networks:
-  redis-net:
+  redis-network:
