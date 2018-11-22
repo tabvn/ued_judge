@@ -4,5 +4,9 @@ UED Online Judge
 
 ## Installation
 
-* Install Docker
-* Run ./install and visit http://localhost:3000
+* Install Docker https://www.docker.com/get-started
+* Deploy to your docker container
+```
+./install and visit http://localhost:3000
+
+```
