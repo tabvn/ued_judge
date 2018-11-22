@@ -38,17 +38,19 @@ namespace Ued {
                 /* .basic_auth_login_file */    NULL,
         };
 
+        int logs = LLL_USER | LLL_ERR | LLL_WARN | LLL_NOTICE;
+
         void start(int port) {
 
             struct lws_context_creation_info info;
             struct lws_context *context;
             const char *p;
-            int n = 0, logs = LLL_USER | LLL_ERR | LLL_WARN | LLL_NOTICE;
+            int n = 0;
             signal(SIGINT, [](int signal) {
                 interrupted = 1;
             });
 
-            lws_set_log_level(logs, NULL);
+            lws_set_log_level(this->logs, NULL);
             lwsl_user("Server started http://localhost:%d\n", port);
 
             memset(&info, 0, sizeof info);
