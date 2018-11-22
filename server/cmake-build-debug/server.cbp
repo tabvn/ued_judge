@@ -88,6 +88,9 @@
 		<Unit filename="/Users/toan/Projects/ued/server/src/server.h">
 			<Option target="server"/>
 		</Unit>
+		<Unit filename="/Users/toan/Projects/ued/server/src/subscribe.h">
+			<Option target="server"/>
+		</Unit>
 		<Unit filename="/Users/toan/Projects/ued/server/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

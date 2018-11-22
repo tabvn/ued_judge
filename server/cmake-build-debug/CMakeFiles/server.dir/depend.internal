@@ -4,6 +4,21 @@
 CMakeFiles/server.dir/main.cpp.o
  /Users/toan/Projects/ued/server/main.cpp
  /Users/toan/Projects/ued/server/src/server.h
+ /Users/toan/Projects/ued/server/src/subscribe.h
+ /usr/local/include/cpp_redis/builders/builder_iface.hpp
+ /usr/local/include/cpp_redis/builders/reply_builder.hpp
+ /usr/local/include/cpp_redis/core/client.hpp
+ /usr/local/include/cpp_redis/core/reply.hpp
+ /usr/local/include/cpp_redis/core/sentinel.hpp
+ /usr/local/include/cpp_redis/core/subscriber.hpp
+ /usr/local/include/cpp_redis/cpp_redis
+ /usr/local/include/cpp_redis/helpers/variadic_template.hpp
+ /usr/local/include/cpp_redis/impl/client.ipp
+ /usr/local/include/cpp_redis/misc/error.hpp
+ /usr/local/include/cpp_redis/misc/logger.hpp
+ /usr/local/include/cpp_redis/network/redis_connection.hpp
+ /usr/local/include/cpp_redis/network/tcp_client.hpp
+ /usr/local/include/cpp_redis/network/tcp_client_iface.hpp
  /usr/local/include/ev.h
  /usr/local/include/event2/event-config.h
  /usr/local/include/event2/event.h
@@ -88,6 +103,16 @@ CMakeFiles/server.dir/main.cpp.o
  /usr/local/include/openssl/tls1.h
  /usr/local/include/openssl/x509.h
  /usr/local/include/openssl/x509_vfy.h
+ /usr/local/include/tacopie/network/io_service.hpp
+ /usr/local/include/tacopie/network/self_pipe.hpp
+ /usr/local/include/tacopie/network/tcp_client.hpp
+ /usr/local/include/tacopie/network/tcp_server.hpp
+ /usr/local/include/tacopie/network/tcp_socket.hpp
+ /usr/local/include/tacopie/tacopie
+ /usr/local/include/tacopie/utils/error.hpp
+ /usr/local/include/tacopie/utils/logger.hpp
+ /usr/local/include/tacopie/utils/thread_pool.hpp
+ /usr/local/include/tacopie/utils/typedefs.hpp
  /usr/local/include/uv.h
  /usr/local/include/uv/darwin.h
  /usr/local/include/uv/errno.h

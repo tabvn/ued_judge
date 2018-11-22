@@ -1,10 +1,23 @@
 version: '3.2'
 
 services:
+  redis:
+    image: redis
+    hostname: redis
+    networks:
+      - redis-net
+    ports:
+      - 6379:6379
   server:
     build: ./server
     tty: true
+    networks:
+      - redis-net
+    depends_on:
+      - "redis"
     volumes:
       - './server/public:/usr/src/server/public'
     ports:
       - 3000:3000
+networks:
+  redis-net:
