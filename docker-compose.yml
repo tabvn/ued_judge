@@ -1,0 +1,10 @@
+version: '3.2'
+
+services:
+  server:
+    build: ./server
+    tty: true
+    volumes:
+      - './server/public:/usr/src/server/public'
+    ports:
+      - 3000:3000
