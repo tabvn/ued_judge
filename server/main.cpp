@@ -6,7 +6,7 @@
 
 
 Ued::Server server;
-Ued::Subscribe sub;
+Ued::Subscribe subscription;
 
 const int PORT = 3000;
 
@@ -14,24 +14,21 @@ int main(int argc, const char **argv) {
 
     // Server
     std::thread tServer([]() {
+        
         server.config.origin = "/usr/src/server/public"; // path from docker container
         server.logs = LLL_USER;
         server.start(PORT);
-
-
     });
 
-    std::thread tSub([]() {
 
-        sleep(3);
-        sub.connect();
-        sub.subscribe();
-
+    // Local pub sub service
+    std::thread tSubscription([]() {
+        subscription.connect();
+        subscription.subscribe();
     });
-
 
     tServer.join();
-    tSub.join();
+    tSubscription.join();
 
 
     return 0;
